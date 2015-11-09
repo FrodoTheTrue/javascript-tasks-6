@@ -19,8 +19,8 @@ module.exports = function () {
             if (this.date.minutes.length === 1) {
                 this.date.minutes = '0' + this.date.minutes.toString();
             }
-            result = result.replace('%HH:%MM', (parseInt(this.date.hours) + this.timezone).toString()
-                + ":" + this.date.minutes);
+            result = result.replace('%HH:%MM', (parseInt(this.date.hours) +
+                this.timezone).toString() + ':' + this.date.minutes);
             return result;
         },
 
